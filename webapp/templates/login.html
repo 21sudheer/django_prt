@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>signup page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="card bg-light">
+    <article class="card-body mx-auto" style="max-width: 400px;">
+      <h1 class="card-title mt-3 text-center">Register to Real Returns.ai</h1>
+      <h6 class="card-title mt-3 text-center">Learn * Understand * Invest</h6>
+      <div class="container">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="w-100"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+      </div>
+      
+      <form action="" method="POST">
+        {% csrf_token %}
+      
+        
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <!-- <span class="input-group-text"> <i class="fa fa-envelope"></i> </span> -->
+         </div>
+            <input name="username" class="form-control" placeholder="Enter Your username" type="username">
+        </div>
+        <!-- <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+        </div>
+        
+        </div>  -->
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <!-- <span class="input-group-text"> <i class="fa fa-lock"></i> </span> -->
+        </div>
+            <input class="form-control" name="password" placeholder="Enter Password" type="password">
+        </div> <!-- form-group// -->
+        
+        <br>
+        <div class="mb-3 d-grid">
+          <button type="submit" class="btn btn-primary">
+            Forgot Password
+          </button>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block" ><a href="/HomePage"></a>Sign In</button>
+      </div> <!-- form-group// --> 
+        <span>Don't have an account?</span>
+                                    
+       
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block" ><a href="/SignupPage"></a>Register Now</button>
+        </div>     
+    </form>
+    </article>
+    </div> <!-- card.// -->
+    
+    </div> 
+    <!--container end.//-->
+    
+   
+</body>
+</html>
